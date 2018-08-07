@@ -159,6 +159,9 @@ function moveDodgerRight() {
    if (left < (GAME_WIDTH-40)){
      window.requestAnimationFrame(move)
    }
+   else{
+     continue
+   }
  }
   window.requestAnimationFrame(move)
 }
