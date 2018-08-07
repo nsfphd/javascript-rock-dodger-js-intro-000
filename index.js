@@ -78,15 +78,15 @@ function createRock(x) {
     function move(){
       rock.style.right = `${top-4}px`
      if (topNumbers > 360){
-       ROCKS.pop(rock)
-     }
+       removeElements(document.querySelectorAll('rock'))
+        }
      else if(checkCollision == true){
        endGame()
      }
      else {
        window.requestAnimationFrame(moveRock)
      }
-    }  
+    }
 }
 
     // implement me!
