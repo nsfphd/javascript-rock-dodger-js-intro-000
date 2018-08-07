@@ -153,10 +153,10 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   leftNumbers = dodger.style.left.replace('px', '')
   left = parseInt(leftNumbers, 10)
-  var right = left+20
+  var right = left+40
   function move(){
     dodger.style.left = `${right+4}px`
-   if (right < 380){
+   if (right < 360){
      window.requestAnimationFrame(move)
    }
  }
