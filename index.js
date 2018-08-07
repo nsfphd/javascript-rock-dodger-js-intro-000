@@ -78,7 +78,7 @@ function createRock(x) {
     function move(){
       rock.style.right = `${top-4}px`
      if (topNumbers > 360){
-       removeElements(document.querySelectorAll('rock'))
+       removeElements(document.querySelector('rock'))
         }
      else if(checkCollision == true){
        endGame()
