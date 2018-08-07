@@ -73,6 +73,22 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    var topNumbers = rock.style.top.replace('px', '')
+    top = parseInt(topNumbers, 10)
+    function move(){
+      rock.style.right = `${top-4}px`
+     if (topNumbers > 360){
+       ROCKS.pop(rock)
+     }
+     else if(checkCollision == true){
+       endGame()
+     }
+     else {
+       window.requestAnimationFrame(moveRock)
+     }
+    }  
+}
+
     // implement me!
     // (use the comments below to guide you!)
     /**
