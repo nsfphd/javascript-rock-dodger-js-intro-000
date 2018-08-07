@@ -160,7 +160,7 @@ function moveDodgerRight() {
      window.requestAnimationFrame(move)
    }
    else{
-     continue
+     break
    }
  }
   window.requestAnimationFrame(move)
