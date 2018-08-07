@@ -76,7 +76,7 @@ function createRock(x) {
     var topNumbers = rock.style.top.replace('px', '')
     top = parseInt(topNumbers, 10)
     function move(){
-      rock.style.right = `${top-4}px`
+      rock.style.right = `${top-2}px`
      if (topNumbers > 360){
        removeElements(document.querySelector('rock'))
         }
