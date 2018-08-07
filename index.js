@@ -156,7 +156,7 @@ function moveDodgerRight() {
   var right = left+20
   function move(){
     dodger.style.left = `${right+4}px`
-   if (rightNumbers < 400){
+   if (right < 400){
      window.requestAnimationFrame(move)
    }
  }
