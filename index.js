@@ -159,6 +159,7 @@ function moveDodgerRight() {
     console.log(right)
    if (right<400){
      window.requestAnimationFrame(move)
+         console.log(right)
    }
  }
   window.requestAnimationFrame(move)
